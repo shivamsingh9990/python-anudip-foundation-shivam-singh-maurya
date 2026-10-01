@@ -1,0 +1,15 @@
+pin = "1234"
+
+previous_pin = input("Enter previous PIN: ")
+
+if previous_pin == pin:
+    new_pin = input("Enter new PIN: ")
+    retype_pin = input("Retype new PIN: ")
+
+    if new_pin == retype_pin:
+        pin = new_pin
+        print("PIN changed successfully")
+    else:
+        print("Error: New PIN does not match")
+else:
+    print("Error: Incorrect previous PIN")
